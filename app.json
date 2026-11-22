@@ -1,0 +1,38 @@
+{
+  "expo": {
+    "name": "Mimi Calculator",
+    "slug": "mimi-calculator",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "backgroundColor": "#000000",
+    "android": {
+      "package": "com.apstudio24.mimicalculator",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#000000"
+      }
+    },
+    "extra": {
+      "_COMMENT_ADMOB": "=== கீழே இருக்கிற plugins-ல 'androidAppId'-ல PASTE_YOUR_ADMOB_APP_ID_HERE-ஐ அழிச்சுட்டு உன் AdMob APP ID-ஐ போடு (ca-app-pub-xxxxxxxxxxxxxxxx~xxxxxxxxxx). இது App ID, Banner Ad Unit ID இல்ல! தப்பான ID இருந்தா build fail ஆகும் / app crash ஆகும். Test-க்கு Google test App ID: ca-app-pub-3940256099942544~3347511713 ==="
+    },
+    "plugins": [
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash.png",
+          "resizeMode": "cover",
+          "backgroundColor": "#000000"
+        }
+      ],
+      [
+        "react-native-google-mobile-ads",
+        {
+          "androidAppId": "PASTE_YOUR_ADMOB_APP_ID_HERE"
+        }
+      ]
+    ]
+  }
+}
